@@ -7,11 +7,17 @@
     <title>Card Game</title>
 </head>
 <body>
-    <button id="new-deck">New Deck</button>
+    <div class="top">
+        <button id="new-deck">New Deck</button>
+        <p>Remaining Cards: <span id="card-no"></span></p>
+    </div>
+    <h2 id="header-text">Game of war!</h2>
+    <p>Computer: <span id="computer-score"></span></p>
     <div id="cards">
         <div class="card-slot"></div>
         <div class="card-slot"></div>
     </div>
+    <p>You: <span id="my-score"></span></p>
     <button id="draw-cards">Draw</button>
     <script src="index.js"></script>
 </body>

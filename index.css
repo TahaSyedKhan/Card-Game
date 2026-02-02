@@ -13,6 +13,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    color: white;
+}
+
+h2, p {
+    font-size: 1.5rem;
 }
 
 button {
@@ -30,6 +35,9 @@ button {
 #draw-cards {
     width: 100%;
 }
+#draw-cards:disabled {
+    cursor: not-allowed;
+}
 
 .cards {
     width: 100%;
@@ -42,4 +50,14 @@ button {
     border: 1px solid yellow;
     border-radius: 5px;
     margin-bottom: 3.125em;
+}
+
+.top {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.top p {
+    margin-left: 1em;
 }
